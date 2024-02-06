@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/messageOnDesk.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message on Desk</h1>
+        <div>
+            <!-- Type of alert -->
+            <select id="style" name="style">
+                <option value="success">Success</option>
+                <option value="error">Error</option>
+                <option value="warning">Warning</option>
+                <option value="info">Info</option>
+            </select>
+    
+            <!-- Select locale on desk -->
+            <select id="locale" name="locale">
+                <option value="top">TOP</option>
+                <option value="bottom">BOTTOM</option>
+            </select>
+            <!-- Select side on desk -->
+            <select id="side" name="side">
+                <option value="right">RIGHT</option>
+                <option value="left">LEFT</option>
+            </select>
+        </div>
+        <!-- Message to show -->
+        <textarea id="title" name="title" placeholder="Message">Sucesso!</textarea>
+        <textarea id="text" name="text" placeholder="Message">Valor à ser definido. Teste de toast!</textarea>
+        <!-- Button to generate message -->
+        <button onclick="generateMessage()">Generate Message</button>
+    </div>
+    <div id="message">
+
+    </div>
+</body>
+<script src="js/messageOnDesk.js"></script>
+</html>
