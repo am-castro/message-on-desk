@@ -1,14 +1,14 @@
 var isShowMoreMessage = false;
 
 function generateMessage() {
-    var locale = document.getElementById('locale').value;
+    var location = document.getElementById('location').value;
     var side = document.getElementById('side').value;
     var title = document.getElementById('title').value;
     var text = document.getElementById('text').value;
     var style = document.getElementById('style').value;
 
     var message = document.getElementById('message');
-    message.innerHTML = `<div class="messageOnDesk bg-${style}" style="${locale}: 12px; ${side}: 12px;">
+    message.innerHTML = `<div class="messageOnDesk bg-${style}" style="${location}: 12px; ${side}: 12px;">
         <span class="closeMessageIcon" onclick="this.parentElement.style.display='none';">X</span>
         <h3 class="messageTitle">${title}</h3>
         <span class="messageText">${text}</span>
